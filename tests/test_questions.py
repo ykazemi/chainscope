@@ -1,6 +1,8 @@
 import pytest
 
+from chainscope.api_utils.api_selector import APIPreferences
 from chainscope.questions import gen_qs
+from chainscope.typing import SamplingParams
 
 
 @pytest.mark.parametrize("prop_id", ["aircraft-speeds", "element-densities"])
@@ -12,6 +14,20 @@ def test_gen_qs(prop_id):
         prop_id=prop_id,
         n=n,
         max_comparisons=max_comparisons,
+        min_popularity=None,
+        max_popularity=None,
+        min_fraction_value_diff=None,
+        max_fraction_value_diff=None,
+        dataset_suffix=None,
+        # "no" skips the LLM-based ambiguity evaluation, keeping this test offline
+        remove_ambiguous="no",
+        non_overlapping_rag_values=False,
+        min_rag_values_count=None,
+        api_preferences=APIPreferences.from_args(),
+        evaluator_model_id="",
+        evaluator_sampling_params=SamplingParams(
+            temperature=0.0, top_p=0.9, max_new_tokens=1
+        ),
     )
 
     # For each comparison type and answer, verify the generated dataset
