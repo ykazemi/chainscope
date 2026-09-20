@@ -43,7 +43,7 @@ An independent follow-up study auditing the answer-flipping phenomenon on QwQ-32
 See `flip_experiments/README.md`.
 
 
-# Citation
+# Citation to the main paper
 
 To cite this work, you can use our arXiv paper citation:
 ```
