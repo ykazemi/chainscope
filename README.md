@@ -36,18 +36,10 @@ The datasets for Restoration Erros can be found in `chainscope/data/problems`.
 
 See `UNFAITHFUL_SHORTCUTS.md`
 
-# Citation
+# Answer Flipping Follow-up (My Contribution) 
 
-To cite this work, you can use [our arXiv paper](https://arxiv.org/abs/2503.08679) citation:
+An independent follow-up study auditing the answer-flipping phenomenon on QwQ-32B traces: manually reclassifying the automatically flagged flips, testing whether an alternative answer interface (semantic/A-B/polarity framing) resolves the mismatch while holding the model's reasoning fixed, and localizing the effect via activation probing and patching.
 
-```
-@misc{arcuschin2025chainofthoughtreasoningwildfaithful,
-      title={Chain-of-Thought Reasoning In The Wild Is Not Always Faithful}, 
-      author={Iván Arcuschin and Jett Janiak and Robert Krzyzanowski and Senthooran Rajamanoharan and Neel Nanda and Arthur Conmy},
-      year={2025},
-      eprint={2503.08679},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2503.08679}, 
-}
+See `flip_experiments/README.md`.
+
 ```
