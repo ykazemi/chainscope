@@ -42,4 +42,19 @@ An independent follow-up study auditing the answer-flipping phenomenon on QwQ-32
 
 See `flip_experiments/README.md`.
 
+
+# Citation
+
+To cite this work, you can use our arXiv paper citation:
+```
+@misc{arcuschin2025chainofthoughtreasoningwildfaithful,
+      title={Chain-of-Thought Reasoning In The Wild Is Not Always Faithful}, 
+      author={Iván Arcuschin and Jett Janiak and Robert Krzyzanowski and Senthooran Rajamanoharan and Neel Nanda and Arthur Conmy},
+      year={2025},
+      eprint={2503.08679},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2503.08679}, 
+}
+
 ```
